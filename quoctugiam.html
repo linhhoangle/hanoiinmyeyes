@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="intro.css" rel="stylesheet">
+    <link rel="stylesheet" href="border.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<style>
+    h1, p {
+    font-family: Lobster, sans-serif;
+}
+</style>
+
+<body class="w3-light-grey">
+    <div class="w3-top">
+        <header class="w3-bar w3-xlarge menu w3-teal">
+                <a href="Project4.html" class="w3-button w3-padding-16 w3-left">Home</a>
+                <a href="#contact" class="w3-button w3-padding-16 w3-right">Contact</a>
+        </header>
+    </div>
+
+    <div class="w3-content intro" style="max-width:1100px;">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-padding-large">
+                <h1 class="w3-center w3-text-cyan">Quoc Tu Giam Temple</h1>
+            </div>
+            <div class="w3-padding-large w3-col m6">
+                <p><span style="font-weight:bold;">Name:</span> Quoc Tu Giam Temple or Temple of Literature.</p>
+                <p><span style="font-weight:bold;">Location:</span> 58 Quoc Tu Giam, Van Mieu, Dong Da, Ha Noi, Viet Nam.</p>
+                <p><span style="font-weight:bold;">Built:</span> 1070.</p>
+                <p><span style="font-weight:bold;">Description:</span> Quoc Tu Giam - the first university in Vietnam. Quoc Tu Giam Temple are two works built to teach and worship Confucius and ancient Confucian sages. The Temple of Literature was built in 1070 under King Ly Thanh Tong, and Quoc Tu Giam was built in 1076, under King Ly Nhan Tong.</p>
+            </div>
+            <div class="w3-padding-large w3-col m6 w3-hide-small">
+                <img src="quoctugiam3.jpg" alt="cong vao quoc tu giam" class="w3-round w3-image" style="width:100%; height:450px;">
+            </div>
+        </div>
+        <hr>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-padding-large">
+                <h1 class="w3-center w3-text-cyan">Activies</h1>
+                <p>Quoc Tu Giam is a very famous tourist destination in Vietnam with its unique architecture and long history.  As the first university in Southeast Asia and also a place of worship for Confucius and the ancient geniuses, Vietnamese people, especially students, often come here to pray for luck in their studies and works. Moreover, just before the Vietnamese New Year celebration Tết, calligraphists will assemble outside the temple and write wishes in Hán characters. The art works are given away as gifts or are used as home decorations for special occasions.</p>
+                <p><span style="font-weight:bold;">Note:</span> do not harm relics, do not rub turtle's head, draw or sit on doctor's stele; dress discreetly and neatly; no smoking, profanity, disorder and security; not organizing gambling or fraud;  environmental landscape protection; do not bring weapons, explosives, flammable substances into the relic.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-padding-large">
+                <h1 class="w3-center w3-text-cyan">Other Images</h1>
+            </div>
+            <div class="w3-content w3-display-container slide">
+                <img class="mySlides" src="quoctugiam4.jpg" alt="phia ben trong quoc tu giam" style="width:100%; height:600px;">
+                <img class="mySlides" src="quoctugiam2.jpg" alt="duong vao ben trong quoc tu giam" style="width:100%; height:600px;">
+                <img class="mySlides" src="quoctugiam1.jpg" alt="tuong rua trong quoc tu giam" style="width:100%; height:600px;">
+                <img class="mySlides" src="quoctugiam5.jpg" alt="ben trong quoc tu giam" style="width:100%; height:600px;">
+                
+                
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+        
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+        
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+                }
+            </script>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-teal w3-center" id="contact">
+        <p>Choose a social media type you want to contact me.</p>
+        <a href="https://www.facebook.com/hoanglinh.le.12720100" target="_blank" style="color:white"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Thanks you very much.</p>
+    </footer>
+</body>
+</html>

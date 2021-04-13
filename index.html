@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="content.css">
+<link rel="stylesheet" href="slide.scs">
+<link rel="stylesheet" href="intro.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<style>
+ 
+
+</style>
+<script src=""></script>
+<body class="w3-light-grey">
+<div class="w3-top">
+    <header class="w3-bar w3-xlarge menu w3-teal">
+            <a href="#" class="w3-button w3-padding-16 w3-left">Home</a>
+            <a href="#contact" class="w3-button w3-padding-16 w3-right">Contact</a>
+    </header>
+</div>
+
+<div class="w3-content" style="max-width:1100px">
+    <div class="w3-padding-large intro">
+        <h1 class="w3-center w3-text-cyan">Hanoi In My Eyes</h1>
+        <p>Welcome to my website!!!</p>
+        <p>This website has been created to introduce some of landscapes in Ha Noi. I hope the information in here will useful to you. Thanks you.</p>
+    </div>
+    <hr>
+</div>
+
+<section>
+    <div class="w3-content w3-display-container slide">
+        <img class="mySlides" src="anh1.jpg" alt="Ha noi chup tu tren cao" style="width:100%; height:600px;">
+        <img class="mySlides" src="anh2.jpg" alt="Chup anh ho guom" style="width:100%; height:600px;">
+        <img class="mySlides" src="anh3.jpg" alt="anh thap" style="width:100%; height:600px;">
+        <img class="mySlides" src="anh4.jpg" alt="nha tho ha noi" style="width:100%; height:600px;">
+        <img class="mySlides" src="anh5.jpg" alt="duong pho ha noi ve dem" style="width:100%; height:600px;">
+        
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+    
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+</section>
+
+
+<div class="w3-content" style="max-width:1100px">
+    <div class="w3-row w3-padding-64" id="hanoi">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <img src="hanoitrongtoi.jpg" alt="ngoi den ben ho" class="w3-round w3-image">
+        </div>
+    
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">About Hanoi</h1>
+            <br>
+            <p class="text">Hanoi is the capital of Vietnam with a history of more than 1000 years.  Not only famous for its long history, rich in identity, traditional culture, this land is also known as one of the places that attracts many domestic and foreign tourists.</p>
+            <p class="text">Hanoi is in the top 17 capitals with the largest area in the world with 3,324.92 km2.  With this favorable geographical location, this city easily becomes an important economic, political, cultural and scientific center of the country. Due to the humid monsoon tropical climate, traveling to Hanoi, you can enjoy all four seasons of the year.  Each season has its own characteristics, giving you different feelings about life, scenery and people here.</p>
+            <p class="text">This land gave birth to a folklore with many legends, songs, proverbs, folk festivals and praised heroes, cultural monuments and landscapes.  Along with that are villages with Buddhist architectural features, folklore, French architecture scattered on the streets, making visitors unable to stop enjoying themselves while walking down the busy, developed streets.</p>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="w3-content" style="max-width:1100px">
+    <div class="w3-padding-large">
+        <h1 class="w3-center w3-text-cyan" style="font-size:50px;">Beautiful Landscapes</h1>
+    </div>
+</div>
+
+<div class="w3-content" style="max-width:1100px">
+    <div class="w3-row w3-padding-64" id="langbac">
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">Ho Chi Minh Mausoleum</h1>
+            <br>
+            <p>Ho Chi Minh Mausoleum is the place to preserve the body of Uncle Ho - the beloved old father of the nation.  The mausoleum was started construction on September 2, 1973 and completed on August 19, 1975.  The day work is 21.6 m high, 41.2 m wide, made entirely of various rare and precious stones.  Overall, the mausoleum is like a stylized lotus flower.  Mausoleum has become a famous destination that anyone traveling to Hanoi wants to visit.  Coming here, visitors not only can admire this special architecture but also see with their own eyes that Uncle is sleeping quietly.</p>
+            <p><a href="langbac.html">Click here to get more informations and see more images.</a></p>
+        </div>
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <img src="langbacho.jpg" alt="lang bac ho" class="w3-round w3-image w3-opacity-min" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div class="w3-row w3-padding-64" id="quoctugiam">
+         <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="vanmieu.jpg" alt="loi vao van mieu" class="w3-round w3-image" style="width:100%">
+        </div>
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">Quoc Tu Giam Temple</h1>
+            <br>
+            <p>This is the ancient school of Thang Long Kinh Thanh and the first university in Southeast Asia.  The Temple of Literature is not only a historical and cultural relic but also a place where activities and events take place imbued with the identity of the people of the Capital.  The inside still preserves many precious artifacts such as the Bich Ung bell, the Confucius statue and 82 steles with the names of those who have passed the doctorate, ...  This is an ideal place to study in ancient times.</p>
+            <p><a href="quoctugiam.html">Click here to get more informations and see more images.</a></p>
+        </div>
+    </div>
+    <br>
+    <div class="w3-row w3-padding-64" id="hotay">
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">West Lake</h1>
+            <br>
+            <p>West Lake covers an area of ​​more than 500 hectares with a history of several thousand years.  Together with Truc Bach Lake, West Lake contributes to the poetic nature of the city.  If you take a walk around the lake, you will be able to visit a variety of monuments and landscapes.  Nhat Tan village with peach blossoms in full bloom when spring comes, Xuan Tao village with the Church of Thanh Giong, the village of Ke Buoi fairy paper making, ... and a number of works built around the lake to make the surroundings more diverse.</p>
+            <p><a href="westlake.html">Click here to get more informations and see more images.</a></p>
+        </div>
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <img src="hotaynight.jpg" alt="ho tay ve dem" class="w3-round w3-image" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div class="w3-row w3-padding-64" id="hoankiem">
+        <div class="w3-hide-small w3-col m6 w3-padding-large">
+            <img src="hoankiem.jpg" alt="ho hoan kiem tu tren cao" class="w3-round w3-image" style="width:100%">
+        </div>
+        <div class="w3-padding-large w3-col m6">
+            <h1 class="w3-center">Hoan Kiem Lake</h1>
+            <p>Famous for being a romantic flower in the heart of the city, Hoan Kiem Lake is surrounded by three streets: Ly Thai To, Dinh Tien Hoang, Hang Khay about 1.8 km long.  The clear blue water surface reflects the rows of old trees, the graceful willow trees, pagoda roofs, temples, ancient and mossy towers, and even new high-rise buildings.  Here, you can take a walk around watching the peaceful scenery of the lake, inhale the fresh air or simply find a corner to observe the pace of Hanoi people, ... is also a very interesting experience.</p>
+            <p><a href="hoankiem.html">Click here to get more informations and see more images.</a></p>
+        </div>
+    </div>
+    <br>
+    <div class="w3-row w3-padding-64" id="motcot">
+        <div class="w3-padding-large w3-col m6">
+            <h1 class="w3-center">One Pillar Pagoda</h1>
+            <p>When introducing Hanoi, people will immediately think of the image of One Pillar Pagoda.  The temple is like a symbol, attracting a unique architectural style with a square temple, curved roof, erected on a cylindrical stone pillar, on a lotus-covered lake.  Although the work is small, there is still a way for you to go up to the Buddha to burn incense.</p>
+            <p><a href="motcot.html">Click here to get more informations and see more images.</a></p>
+        </div>
+        <div class="w3-padding-large w3-col m6 w3-hide-small">
+            <img src="chuamotcot.jpg" alt="Chua mot cot trong ngay nang" class="w3-round w3-image" style="width:100%">
+        </div>
+    </div>
+</div>
+
+<footer class="w3-container w3-teal w3-center" id="contact">
+    <p>Choose a social media type you want to contact me.</p>
+    <a href="https://www.facebook.com/hoanglinh.le.12720100" target="_blank" style="color:white"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p>Thanks you very much.</p>
+</footer>
+</body>
+</html>

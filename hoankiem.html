@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="intro.css" rel="stylesheet">
+    <link rel="stylesheet" href="border.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<style>
+    h1, p {
+    font-family: Lobster, sans-serif;
+}
+</style>
+
+<body class="w3-light-grey">
+    <div class="w3-top">
+        <header class="w3-bar w3-xlarge menu w3-teal">
+                <a href="Project4.html" class="w3-button w3-padding-16 w3-left">Home</a>
+                <a href="#contact" class="w3-button w3-padding-16 w3-right">Contact</a>
+        </header>
+    </div>
+
+    <div class="w3-content intro" style="max-width:1100px;">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-padding-large">
+                <h1 class="w3-center w3-text-cyan">Hoan Kiem Lake</h1>
+            </div>
+            <div class="w3-padding-large w3-col m6">
+                <p><span style="font-weight:bold;">Name:</span> Hoan Kiem Lake.</p>
+                <p><span style="font-weight:bold;">Location:</span> Hoan Kiem District, Ha Noi, Viet Nam.</p>
+                <p><span style="font-weight:bold;">Description:</span> Hoan Kiem Lake, also known as Sword Lake is a natural freshwater lake located in the center of Hanoi city. The lake has an area of ​​about 12 hectares. The name Hoan Kiem appeared in the early 15th century associated with the legend of King Le Loi returning the precious sword to the Turtle.  According to legend, once King Le Loi was walking on a boat, a golden turtle suddenly emerged to the surface to demand that the king return the sword that Long Vuong had lent to drive away the invading Ming army. The king immediately returned the sword to the magic turtle and the tortoise dived into the water to disappear. Since then, the lake was named Hoan Kiem Lake. The name of the lake is also given to the central district of Hanoi (Hoan Kiem district) and is the only lake in this district to this day.</p>
+            </div>
+            <div class="w3-padding-large w3-col m6 w3-hide-small">
+                <img src="hoankiem1.jpg" alt="thap rua va ho hoan kiem" class="w3-round w3-image" style="width:100%; height:500px;">
+            </div>
+        </div>
+        <hr>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-padding-large">
+                <h1 class="w3-center w3-text-cyan">Activies</h1>
+                <p>Thanks to its location in the heart of Hanoi, Hoan Kiem Lake is surrounded by a wealth of recreational activities of the people and also the beauty of the surrounding architecture and buildings. Here visitors can visit other scenic spots such as Ngoc Son Temple, Te Huc Bridge, Ly Thai To monument, etc. Besides, visitors can participate in activities at Hoan Kiem Lake pedestrian street every 7pm on Saturday and Sunday.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="w3-row w3-padding-64">
+            <div class="w3-padding-large">
+                <h1 class="w3-center w3-text-cyan">Other Images</h1>
+            </div>
+            <div class="w3-content w3-display-container slide">
+                <img class="mySlides" src="hoankiem2.jpg" alt="hoan kiem mua thu" style="width:100%; height: 600px;">
+                <img class="mySlides" src="hoankiem3.jpg" alt="cau the huc" style="width:100%; height:600px;">
+                <img class="mySlides" src="hoankiem4.jpg" alt="hoan kiem mua xuan" style="width:100%; height:600px;">
+                <img class="mySlides" src="hoankiem5.jpg" alt="hoan kiem mua xuan" style="width:100%; height:600px;">
+                
+                
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+            
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+        
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+        
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex-1].style.display = "block";
+                }
+            </script>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-teal w3-center" id="contact">
+        <p>Choose a social media type you want to contact me.</p>
+        <a href="https://www.facebook.com/hoanglinh.le.12720100" target="_blank" style="color:white"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p>Thanks you very much.</p>
+    </footer>
+</body>
+</html>
+

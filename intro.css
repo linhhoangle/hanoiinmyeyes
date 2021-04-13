@@ -1,0 +1,12 @@
+    /*This is for intro*/
+    .intro h1 {
+        font-size: 50px;
+    }
+
+    .intro p {
+        font-size: 20px;
+    }
+
+    .intro {
+        margin-top: 60px;
+    }

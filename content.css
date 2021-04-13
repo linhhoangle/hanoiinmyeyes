@@ -1,0 +1,16 @@
+p, h1 {
+    font-family: Lobster, sans-serif;
+}
+
+#hanoi p {
+    font-size: 20px;
+}
+a {
+    color:blue;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
